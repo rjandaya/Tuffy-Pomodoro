@@ -1,3 +1,6 @@
+## Intro
+Tuffy Pomodoro is a web app that allows a variety of Pomodoro timers to automatically trigger focus/break timers
+
 ## Inspiration
 We wanted to combine a set of useful timers now that the majority of our lives are spent staring at computer screens doing work or other activities. 
 
