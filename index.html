@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>TuffyHacks Pomodoro</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+         
+        <script type="text/javascript" src="timer.js"></script>
+    </head>
+    <body>
+        <form study-techniques="form">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="technique" value="pomodoro">
+                    Pomodoro
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="technique" value="animedoro">
+                    Animedoro
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="technique" value="twenty">
+                    20-20-20
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="technique" value="custom">
+                    Custom Work Timer (Minutes)<br/>
+                    <input type="text" name="custom" id="custom">
+                </label>
+            </div>
+            <div class = "button">
+            <input type="button" value="Submit" onclick="submitHandler()" />    
+            <input type="reset" value="Reset" onclick="resetTimer()">
+            </div>
+        <p><a href="#explaination" rel="modal:open">What is this?</a></p>
+        </form>
+
+        <div class="timeCount">
+            <div class="center">
+                <span class ="state-text" id="state">Please Select A Study Technique</span>
+                <p></p>
+                <span class ="timer-text" id="timer">00:00</span>
+            </div>
+        </div>
+
+        <div id="explaination" class="modal">
+            
+            <div class="explaination-title">
+                Pomodoro
+            </div>
+            A popular time management technique by Francesco Cirillo.
+            It consists of a 25 minute work time and 5 minute break intervals.
+            <p></p>
+            <p></p>
+            <div class="explaination-title">
+                Animedoro
+            </div>
+            A study method by the youtuber Josh Chen. Splits work into 
+            one hour sessions and a 20 minute break inbetween.
+            <p></p>
+            <p></p>
+            <div class="explaination-title">
+                20-20-20
+            </div>
+            A method to prevent eye strain: Every 20 minutes spent 
+            looking at a screen, take 20 seconds to look at an object 20 feet away.
+            <p></p>
+         
+          </div>
+        
+        </div>
+        
+        
+       
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </body>
+</html>
