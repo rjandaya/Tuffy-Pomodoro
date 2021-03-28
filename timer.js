@@ -126,6 +126,7 @@ async function submitHandler() {
 
     } else if (techniques == 'custom') {
         var customvalue = document.getElementById('custom').value;
+        state.innerHTML = "Get back to work!";
         console.log('customvalue:', customvalue);
         
         countdown(customvalue - 1, 60);
