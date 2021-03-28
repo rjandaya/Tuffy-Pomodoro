@@ -1,1 +1,1 @@
-# Tuffyhacks-Pomodoro
+# Tuffy-Pomodoro
